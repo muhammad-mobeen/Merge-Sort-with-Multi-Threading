@@ -21,6 +21,7 @@ import threading
 def threads_distributor(lst):
     '''
     Distributes the list of elements among multiple threads untill all the lists are sorted and combined into one.
+    Intially each list gets divided into 4 parts and merge sort is carried out on individual lists.
     '''
     # Divide the list in 4 parts
     thread_divider = len(lst)//4
@@ -62,6 +63,7 @@ def threads_distributor(lst):
 
 
 def mergeSort(myList):
+    '''Sorts the given list according to the merge sort algorithm'''
     if len(myList) > 1:
         mid = len(myList) // 2
         left = myList[:mid]
@@ -102,6 +104,7 @@ def mergeSort(myList):
             k += 1
 
 def get_data_from_user():
+    '''Inputs data from user'''
     myList = []
     print("Enter the number of elements you want to enter: ",end="")
     no_elem = int(input())
