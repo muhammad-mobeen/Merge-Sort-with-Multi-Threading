@@ -10,7 +10,7 @@ Merge Sort Reference: My own code
 
 Note: In my code it is not a requirement that size of list must be greater than 4. Any size of array is acceptable.
 
-Explaination of Task:-
+Explanation of Task:-
 The program gets lists of elements from user and than divedes the list into 4 parts to pass them individually
 to 4 other threads. After the threads executes the sorted list are again combined in pairs of 2.
 We use Multi-threading again to sort the individual pairs. Now we get 2 final pairs so merge sort is applied
